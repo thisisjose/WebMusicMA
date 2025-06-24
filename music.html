@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MÚSICA JOSÉ</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="contenedor-principal">
+
+    <!-- MENU LATERAL -->
+    <aside class="barra-lateral">
+      <nav class="navegacion">
+        <ul>
+          <li><img src="imgs/buscar.png" alt="Buscar" class="icono-blanco"> Buscar</li>
+          <li><img src="imgs/musica.png" alt="Álbum" class="icono-blanco"> Álbum</li>
+          <li><img src="imgs/favorito.png" alt="Favoritos" class="icono-blanco"> Favoritos</li>
+          <li><img src="imgs/playlist.png" alt="Playlist" class="icono-blanco"> Playlist</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main class="contenido">
+      <section class="seccion-fondo">
+        <img src="imgs/imagen-fondo.jpg" alt="Fondo" class="fondo-difuminado">
+      </section>
+
+      <section class="mis-canciones">
+        <h3>My music</h3>
+        <br>
+        <div class="grid-musica" id="lista-canciones">
+          <div class="album" data-index="0"><img src="imgs/album1.jpg"><strong>THE BEATLES</strong><p>LSD</p></div>
+          <div class="album" data-index="1"><img src="imgs/album2.jpg"><strong>NIRVANA</strong><p>Come as You are</p></div>
+          <div class="album" data-index="2"><img src="imgs/album3.jpg"><strong>MAC DEMARCO</strong><p>My kind of Woman</p></div>
+          <div class="album" data-index="3"><img src="imgs/album4.jpg"><strong>IRON MAIDEN</strong><p>Chuchuwa</p></div>
+          <div class="album" data-index="4"><img src="imgs/album5.jpg"><strong>RADIOHEAD</strong><p>Paranoid Android</p></div>
+          <div class="album" data-index="5"><img src="imgs/album6.jpg"><strong>QUEEN</strong><p>Bohemian Rhapsody</p></div>
+          <div class="album" data-index="6"><img src="imgs/album7.jpg"><strong>GREEN DAY</strong><p>American Idiot</p></div>
+          <div class="album" data-index="7"><img src="imgs/album8.jpg"><strong>CUCO</strong><p>Lover is a Day</p></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- REPRODUCTOR DE MUSIC -->
+    <footer class="barra-music">
+      <div class="info-cancion">
+        <img src="imgs/album1.jpg" alt="Cancion" class="img-circular" id="img-actual">
+        <div class="texto-cancion">
+          <p class="titulo-cancion" id="titulo-actual">THE BEATLES</p>
+          <span class="artista" id="artista-actual">LSD</span>
+        </div>
+      </div>
+     
+      <!-- CONTROLES -->
+
+      <div class="controles">
+        <button class="btn" title="Anterior">
+          <svg viewBox="0 0 24 24"><path d="M11 18V6L2.5 12L11 18ZM13 6V18H15V6H13Z"/></svg>
+        </button>
+    
+        <!-- BOTONES -->
+
+        <button class="btn" title="Pausa">
+          <svg viewBox="0 0 24 24"><path d="M8 5H10V19H8V5ZM14 5H16V19H14V5Z"/></svg>
+        </button>
+
+        <button class="btn" id="btn-siguiente" title="Siguiente">
+          <svg viewBox="0 0 24 24"><path d="M13 6V18L21.5 12L13 6ZM11 6H9V18H11V6Z"/></svg>
+        </button>
+      </div>
+    <!-- PROGRESO TIEMPO -->
+
+      <div class="progreso-tiempo">
+        <div class="barra-progreso">
+          <div class="progreso"></div>
+        </div>
+        <span class="tiempo">00:01 / 2:00</span>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
